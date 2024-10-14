@@ -1,4 +1,4 @@
-# Weather Forecaster Freind App
+# Second Opinion Weather App
 
 ## Description
 When inputing a city, you are given a 5 day forecast of the weather for that city.  The city is saved for quick future referrence.
