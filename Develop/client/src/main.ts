@@ -76,11 +76,18 @@ Render Functions
 
 */
 
-const renderCurrentWeather = (currentWeather: any): void => {
+const renderCurrentWeather = (currentWeather: {
+  city: string;
+  date: string;
+  icon: string;
+  iconDescription: string;
+  tempF: number;
+  windSpeed: number;
+  humidity: number;
+}): void => {
   const { city, date, icon, iconDescription, tempF, windSpeed, humidity } =
     currentWeather;
 
-  // convert the following to typescript
   heading.textContent = `${city} (${date})`;
   weatherIcon.setAttribute(
     'src',
